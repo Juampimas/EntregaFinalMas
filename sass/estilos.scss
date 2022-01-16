@@ -92,10 +92,20 @@ main{
         padding: 1em ;
         transition: $normal;
         text-decoration: none;
+        animation: botonHero 1s ease alternate-reverse infinite;
         &:hover{
             color: $color4;
             background-color: $color3;
         }
+    }
+}
+
+@keyframes botonHero{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1); 
     }
 }
 
@@ -115,10 +125,12 @@ main{
             background-size: cover;
             border: 5px solid $color3;
             background-position: center;
+            animation: sobreMiImg 2s ease forwards;
         }
         .contenedor-texto{
             margin-top: 2em;
             text-align: center;
+            animation: sobreMiTexto 2s ease forwards;
             h1{
                 font-weight: 700;
             }
@@ -157,6 +169,27 @@ main{
                 background-color: $color3;
             }
         }
+    }
+}
+
+@keyframes sobreMiImg{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes sobreMiTexto{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -358,6 +391,7 @@ footer{
     }
     img{
         width: 2em;
+        cursor: pointer;
     }
 }
 
@@ -681,13 +715,25 @@ footer{
     .navbar{
         min-height: 6em;
     }
+    .contenedor__hero{
+        position: absolute;
+        top: 0;
+        // arreglo
+        left:15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        height: 100%;
+        padding-bottom: 2em;
+    }
     #sobremi{
-        height: 90vh;
-        padding: 4em 20em;
+        height: 80vh;
+        padding: 4em 30em;
     }
     #servicios{
         height: 80vh;
-        padding: 4em 15em;
+        padding: 4em 20em;
         .card--image{
             width: 50%;
             height: 50%;
@@ -696,12 +742,12 @@ footer{
         }
     }
     #portfolio {
-        height: 150vh;
-        padding: 4em 20em 0;
+        height: 130vh;
+        padding: 4em 30em 0;
     }
     #contacto{
         height: 80vh;
-        padding: 0 20em;
+        padding: 0 25em;
     }
     footer{
         height: 30vh;

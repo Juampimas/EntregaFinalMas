@@ -121,11 +121,34 @@ main {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   text-decoration: none;
+  animation: botonHero 1s ease alternate-reverse infinite;
 }
 
 .contenedor__hero a:hover {
   color: #fff;
   background-color: #E53340;
+}
+
+@-webkit-keyframes botonHero {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes botonHero {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 #sobremi {
@@ -156,11 +179,15 @@ main {
   background-size: cover;
   border: 5px solid #E53340;
   background-position: center;
+  -webkit-animation: sobreMiImg 2s ease forwards;
+          animation: sobreMiImg 2s ease forwards;
 }
 
 #sobremi .contenedor-todo .contenedor-texto {
   margin-top: 2em;
   text-align: center;
+  -webkit-animation: sobreMiTexto 2s ease forwards;
+          animation: sobreMiTexto 2s ease forwards;
 }
 
 #sobremi .contenedor-todo .contenedor-texto h1 {
@@ -219,6 +246,58 @@ main {
 #sobremi .contenedor-todo a:hover {
   color: #fff;
   background-color: #E53340;
+}
+
+@-webkit-keyframes sobreMiImg {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sobreMiImg {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes sobreMiTexto {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sobreMiTexto {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 #servicios {
@@ -471,6 +550,7 @@ footer p {
 
 footer img {
   width: 2em;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 750px) {
@@ -856,13 +936,31 @@ footer img {
   .navbar {
     min-height: 6em;
   }
+  .contenedor__hero {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30%;
+    height: 100%;
+    padding-bottom: 2em;
+  }
   #sobremi {
-    height: 90vh;
-    padding: 4em 20em;
+    height: 80vh;
+    padding: 4em 30em;
   }
   #servicios {
     height: 80vh;
-    padding: 4em 15em;
+    padding: 4em 20em;
   }
   #servicios .card--image {
     width: 50%;
@@ -871,12 +969,12 @@ footer img {
     margin-bottom: 1em;
   }
   #portfolio {
-    height: 150vh;
-    padding: 4em 20em 0;
+    height: 130vh;
+    padding: 4em 30em 0;
   }
   #contacto {
     height: 80vh;
-    padding: 0 20em;
+    padding: 0 25em;
   }
   footer {
     height: 30vh;
