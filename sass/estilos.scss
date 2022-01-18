@@ -82,10 +82,9 @@ main{
         line-height: 2;
         margin: 2em 0;
     }
-    a {
-        margin: 0 auto;
-        width: 55%;
-        display: block;
+    .btn--inicio {
+        width: 30%;
+        display: inline-block;
         border: 2px solid $color3;
         color: $color3;
         font-weight: 700;
@@ -156,18 +155,8 @@ main{
         }
         a {
             margin: 0 auto;
-            width: 55%;
-            display: block;
-            border: 2px solid $color3;
-            color: $color3;
-            font-weight: 700;
-            padding: 1em ;
-            transition: $normal;
-            text-decoration: none;
-            &:hover{
-                color: $color4;
-                background-color: $color3;
-            }
+           @extend .btn--inicio;
+           text-decoration: none;
         }
     }
 }
@@ -206,7 +195,7 @@ main{
     .card{
         height: 20em;
         margin-bottom: 2em;
-        background-color: $color3;
+        // background-color: $color3;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -245,21 +234,25 @@ main{
     }
     a {
         margin: 0 auto;
-        width: 55%;
-        display: block;
-        border: 2px solid $color3;
-        color: $color3;
-        font-weight: 700;
-        padding: 1em ;
-        transition: $normal;
-        text-decoration: none;
-        &:hover{
-            color: $color4;
-            background-color: $color3;
-        }
+        @extend .btn--inicio;
     }
 
 }
+
+// DECLARANDO MAPA  
+$colores: (
+    col1: #E53340,
+    col2: #d42732,
+    col3: #be222c,    
+);
+
+@each $col, $rojo in $colores {
+    .card--#{$col} {
+        background-color: $rojo;
+    }
+}
+
+
 
 // PORTFOLIO
 
@@ -310,18 +303,7 @@ main{
     }
     a {
         margin: 3em auto 0;
-        width: 55%;
-        display: block;
-        border: 2px solid $color3;
-        color: $color3;
-        font-weight: 700;
-        padding: 1em ;
-        transition: $normal;
-        text-decoration: none;
-        &:hover{
-            color: $color4;
-            background-color: $color3;
-        }
+        @extend .btn--inicio;
     }
 }
 
@@ -360,26 +342,21 @@ main{
             }
             #enviar{
                 margin: 1em auto;
-                width: 55%;
-                display: block;
-                border: 2px solid $color3;
-                color: $color3;
-                font-weight: 700;
-                padding: 1em ;
-                transition: $normal;
-                text-decoration: none;
-                background: none;
-                    &:hover{
-                        color: $color4;
-                        background-color: $color3;
-                    }
+                @extend .btn--inicio;
             }
         }
 }
 
 // FOOTER
 
+// DECLARANDO MIXIN
+@mixin fonts($weight, $size) {
+    font-weight: $weight;
+    font-size: $size;
+}
+
 footer{
+    
     height: 80vh;
     padding: 4em 1.5em;
     text-align: center;
@@ -387,6 +364,7 @@ footer{
         font-weight: 700;
     }
     p{
+        @include fonts(700, 1rem);
         margin-bottom: 2em;
     }
     img{

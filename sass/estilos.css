@@ -110,10 +110,9 @@ main {
   margin: 2em 0;
 }
 
-.contenedor__hero a {
-  margin: 0 auto;
-  width: 55%;
-  display: block;
+.contenedor__hero .btn--inicio, .contenedor__hero #sobremi .contenedor-todo a, #sobremi .contenedor-todo .contenedor__hero a, .contenedor__hero #servicios a, #servicios .contenedor__hero a, .contenedor__hero #portfolio a, #portfolio .contenedor__hero a, .contenedor__hero #contacto form #enviar, #contacto form .contenedor__hero #enviar {
+  width: 30%;
+  display: inline-block;
   border: 2px solid #E53340;
   color: #E53340;
   font-weight: 700;
@@ -124,7 +123,7 @@ main {
   animation: botonHero 1s ease alternate-reverse infinite;
 }
 
-.contenedor__hero a:hover {
+.contenedor__hero .btn--inicio:hover, .contenedor__hero #sobremi .contenedor-todo a:hover, #sobremi .contenedor-todo .contenedor__hero a:hover, .contenedor__hero #servicios a:hover, #servicios .contenedor__hero a:hover, .contenedor__hero #portfolio a:hover, #portfolio .contenedor__hero a:hover, .contenedor__hero #contacto form #enviar:hover, #contacto form .contenedor__hero #enviar:hover {
   color: #fff;
   background-color: #E53340;
 }
@@ -232,20 +231,7 @@ main {
 
 #sobremi .contenedor-todo a {
   margin: 0 auto;
-  width: 55%;
-  display: block;
-  border: 2px solid #E53340;
-  color: #E53340;
-  font-weight: 700;
-  padding: 1em;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
   text-decoration: none;
-}
-
-#sobremi .contenedor-todo a:hover {
-  color: #fff;
-  background-color: #E53340;
 }
 
 @-webkit-keyframes sobreMiImg {
@@ -315,7 +301,6 @@ main {
 #servicios .card {
   height: 20em;
   margin-bottom: 2em;
-  background-color: #E53340;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,20 +354,18 @@ main {
 
 #servicios a {
   margin: 0 auto;
-  width: 55%;
-  display: block;
-  border: 2px solid #E53340;
-  color: #E53340;
-  font-weight: 700;
-  padding: 1em;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  text-decoration: none;
 }
 
-#servicios a:hover {
-  color: #fff;
+.card--col1 {
   background-color: #E53340;
+}
+
+.card--col2 {
+  background-color: #d42732;
+}
+
+.card--col3 {
+  background-color: #be222c;
 }
 
 #portfolio {
@@ -452,20 +435,6 @@ main {
 
 #portfolio a {
   margin: 3em auto 0;
-  width: 55%;
-  display: block;
-  border: 2px solid #E53340;
-  color: #E53340;
-  font-weight: 700;
-  padding: 1em;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  text-decoration: none;
-}
-
-#portfolio a:hover {
-  color: #fff;
-  background-color: #E53340;
 }
 
 #contacto {
@@ -517,21 +486,6 @@ main {
 
 #contacto form #enviar {
   margin: 1em auto;
-  width: 55%;
-  display: block;
-  border: 2px solid #E53340;
-  color: #E53340;
-  font-weight: 700;
-  padding: 1em;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  text-decoration: none;
-  background: none;
-}
-
-#contacto form #enviar:hover {
-  color: #fff;
-  background-color: #E53340;
 }
 
 footer {
@@ -545,6 +499,8 @@ footer h4 {
 }
 
 footer p {
+  font-weight: 700;
+  font-size: 1rem;
   margin-bottom: 2em;
 }
 
