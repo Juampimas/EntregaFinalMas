@@ -82,8 +82,9 @@ main{
         line-height: 2;
         margin: 2em 0;
     }
-    .btn--inicio {
-        width: 30%;
+    .btn--inicio  {
+        margin: 0 auto;
+        width: 60%;
         display: inline-block;
         border: 2px solid $color3;
         color: $color3;
@@ -155,8 +156,19 @@ main{
         }
         a {
             margin: 0 auto;
-           @extend .btn--inicio;
-           text-decoration: none;
+            width: 60%;
+            display: inline-block;
+            border: 2px solid $color3;
+            color: $color3;
+            font-weight: 700;
+            padding: 1em ;
+            transition: $normal;
+            text-decoration: none;
+            animation: botonHero 1s ease alternate-reverse infinite;
+            &:hover{
+                color: $color4;
+                background-color: $color3;
+        }
         }
     }
 }
@@ -234,7 +246,19 @@ main{
     }
     a {
         margin: 0 auto;
-        @extend .btn--inicio;
+        width: 60%;
+        display: inline-block;
+        border: 2px solid $color3;
+        color: $color3;
+        font-weight: 700;
+        padding: 1em ;
+        transition: $normal;
+        text-decoration: none;
+        animation: botonHero 1s ease alternate-reverse infinite;
+            &:hover{
+                color: $color4;
+                background-color: $color3;
+        }
     }
 
 }
@@ -302,8 +326,20 @@ $colores: (
         }
     }
     a {
-        margin: 3em auto 0;
-        @extend .btn--inicio;
+        margin: 3em auto;
+        width: 60%;
+        display: inline-block;
+        border: 2px solid $color3;
+        color: $color3;
+        font-weight: 700;
+        padding: 1em ;
+        transition: $normal;
+        text-decoration: none;
+        animation: botonHero 1s ease alternate-reverse infinite;
+            &:hover{
+                color: $color4;
+                background-color: $color3;
+        }
     }
 }
 
@@ -341,8 +377,21 @@ $colores: (
                 margin-bottom: 2em;
             }
             #enviar{
-                margin: 1em auto;
-                @extend .btn--inicio;
+                margin: 0 auto 3em;
+                width: 60%;
+                display: inline-block;
+                background: none;
+                border: 2px solid $color3;
+                color: $color3;
+                font-weight: 700;
+                padding: 1em ;
+                transition: $normal;
+                text-decoration: none;
+                animation: botonHero 1s ease alternate-reverse infinite;
+                &:hover{
+                    color: $color4;
+                    background-color: $color3;
+                }
             }
         }
 }
@@ -434,15 +483,10 @@ footer{
             line-height: 2;
             margin: 2em 0;
         }
-        a{
-            margin: 0;
+        .btn--inicio{
             width: 30%;
-            display: block;
-            text-align: center;
-            border: 2px solid $color3;
-            color: $color3;
-            font-weight: 700;
-            padding: 1em ;
+            margin-left: 0;
+            padding-left: 3em;
         }
     }
     #sobremi{
@@ -662,6 +706,10 @@ footer{
     .navbar{
         min-height: 6em;
     }
+    .btn--inicio{
+        width: 30%;
+        margin-left: 0;
+    }
     #sobremi{
         height: 90vh;
         padding: 4em 10em;
@@ -704,6 +752,10 @@ footer{
         width: 30%;
         height: 100%;
         padding-bottom: 2em;
+        .btn--inicio{
+            width: 30%;
+            margin-left: 0;
+        }
     }
     #sobremi{
         height: 80vh;
