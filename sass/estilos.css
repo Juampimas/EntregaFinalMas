@@ -152,7 +152,7 @@ main {
 }
 
 #sobremi {
-  height: 210vh;
+  height: 85rem;
   padding: 4em 1.5em;
 }
 
@@ -302,7 +302,7 @@ main {
 }
 
 #servicios {
-  height: 210vh;
+  height: 90rem;
   background-color: #14161a;
   padding: 4em 1.5em;
   text-align: center;
@@ -399,7 +399,7 @@ main {
 }
 
 #portfolio {
-  height: 270vh;
+  height: 115rem;
   padding: 4em 1.5em;
   text-align: center;
 }
@@ -483,7 +483,7 @@ main {
 }
 
 #contacto {
-  height: 170vh;
+  height: 75rem;
   background-color: #14161a;
   padding: 0 1.5em;
   display: -webkit-box;
@@ -642,7 +642,7 @@ footer img {
     padding-left: 3em;
   }
   #sobremi {
-    height: 90vh;
+    height: 45rem;
     padding: 4em 6em;
   }
   #sobremi .contenedor-todo {
@@ -728,7 +728,7 @@ footer img {
     background-color: #E53340;
   }
   #servicios {
-    height: 80vh;
+    height: 43rem;
     padding: 4em 3em;
   }
   #servicios .card--image {
@@ -754,7 +754,7 @@ footer img {
     background-color: #E53340;
   }
   #portfolio {
-    height: 140vh;
+    height: 72rem;
     padding: 4em 6em 0;
   }
   #portfolio .grid-portfolio {
@@ -823,7 +823,7 @@ footer img {
     background-color: #E53340;
   }
   #contacto {
-    height: 90vh;
+    height: 46rem;
     padding: 0 6em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -922,11 +922,11 @@ footer img {
     margin-left: 0;
   }
   #sobremi {
-    height: 90vh;
+    height: 45rem;
     padding: 4em 10em;
   }
   #servicios {
-    height: 80vh;
+    height: 43rem;
     padding: 4em 4em;
   }
   #servicios .card--image {
@@ -936,11 +936,11 @@ footer img {
     margin-bottom: 1em;
   }
   #portfolio {
-    height: 150vh;
+    height: 75rem;
     padding: 4em 10em 0;
   }
   #contacto {
-    height: 100vh;
+    height: 50rem;
     padding: 0 10em;
   }
   footer {
@@ -975,11 +975,11 @@ footer img {
     margin-left: 0;
   }
   #sobremi {
-    height: 80vh;
-    padding: 4em 30em;
+    height: 45rem;
+    padding: 4em 20em;
   }
   #servicios {
-    height: 80vh;
+    height: 43rem;
     padding: 4em 20em;
   }
   #servicios .card--image {
@@ -989,11 +989,11 @@ footer img {
     margin-bottom: 1em;
   }
   #portfolio {
-    height: 130vh;
+    height: 73rem;
     padding: 4em 30em 0;
   }
   #contacto {
-    height: 80vh;
+    height: 45rem;
     padding: 0 25em;
   }
   footer {

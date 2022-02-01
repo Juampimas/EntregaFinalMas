@@ -111,7 +111,7 @@ main{
 
 // SOBRE MI
 #sobremi{
-    height: 210vh;
+    height: 85rem;
     padding: 4em 1.5em;
     .contenedor-todo{
         display: flex;
@@ -196,7 +196,7 @@ main{
 
 // SERVICIOS
 #servicios{
-    height: 210vh;
+    height: 90rem;
     background-color: $color2;
     padding: 4em 1.5em;
     text-align: center;
@@ -281,7 +281,7 @@ $colores: (
 // PORTFOLIO
 
 #portfolio{
-    height: 270vh;
+    height: 115rem;
     padding: 4em 1.5em;
     text-align: center;
     h2{
@@ -346,7 +346,7 @@ $colores: (
 // CONTACTO
 
 #contacto{
-    height: 170vh;
+    height: 75rem;
     background-color: $color2;
     padding: 0 1.5em;
     display: flex;
@@ -490,7 +490,7 @@ footer{
         }
     }
     #sobremi{
-        height: 90vh;
+        height: 45rem;
         padding: 4em 6em;
         .contenedor-todo{
             display: flex;
@@ -556,7 +556,7 @@ footer{
             }
     }
     #servicios{
-        height: 80vh;
+        height: 43rem;
         padding: 4em 3em;
         .card--image{
             width: 50%;
@@ -581,7 +581,7 @@ footer{
         }
     }
     #portfolio {
-        height: 140vh;
+        height: 72rem;
         padding: 4em 6em 0;
         .grid-portfolio{
             width: 100%;
@@ -635,7 +635,7 @@ footer{
         }
     }
     #contacto{
-        height: 90vh;
+        height: 46rem;
         padding: 0 6em;
         display: flex;
         flex-direction: row;
@@ -711,11 +711,11 @@ footer{
         margin-left: 0;
     }
     #sobremi{
-        height: 90vh;
+        height: 45rem;
         padding: 4em 10em;
     }
     #servicios{
-        height: 80vh;
+        height: 43rem;
         padding: 4em 4em;
         .card--image{
             width: 50%;
@@ -725,11 +725,11 @@ footer{
         }
     }
     #portfolio {
-        height: 150vh;
+        height: 75rem;
         padding: 4em 10em 0;
     }
     #contacto{
-        height: 100vh;
+        height: 50rem;
         padding: 0 10em;
     }
     footer{
@@ -758,11 +758,11 @@ footer{
         }
     }
     #sobremi{
-        height: 80vh;
-        padding: 4em 30em;
+        height: 45rem;
+        padding: 4em 20em;
     }
     #servicios{
-        height: 80vh;
+        height: 43rem;
         padding: 4em 20em;
         .card--image{
             width: 50%;
@@ -772,11 +772,11 @@ footer{
         }
     }
     #portfolio {
-        height: 130vh;
+        height: 73rem;
         padding: 4em 30em 0;
     }
     #contacto{
-        height: 80vh;
+        height: 45rem;
         padding: 0 25em;
     }
     footer{
