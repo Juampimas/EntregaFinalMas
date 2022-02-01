@@ -592,11 +592,11 @@ footer ul li img {
     min-height: 6em;
   }
   #sobremi {
-    height: 150vh;
+    height: 75rem;
     padding: 4em 6em;
   }
   #servicios {
-    height: 80vh;
+    height: 43rem;
     padding: 4em 3em;
   }
   #servicios .card--image {
@@ -606,11 +606,11 @@ footer ul li img {
     margin-bottom: 1em;
   }
   #portfolio {
-    height: 240vh;
+    height: 132rem;
     padding: 4em 6em 0;
   }
   #contacto {
-    height: 160vh;
+    height: 75rem;
     padding: 0 6em;
   }
   footer {
