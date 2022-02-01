@@ -1,16 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(25, 28, 33);
-    color:#fff
-}
-
 @import "variables";
+@import"general";
+
+
 // HEADER
 
 .navbar {
@@ -265,9 +256,9 @@ main{
 
 // DECLARANDO MAPA  
 $colores: (
-    col1: #E53340,
-    col2: #d42732,
-    col3: #be222c,    
+    col1: #e94c57,
+    col2: #df3944,
+    col3: #da2a36,    
 );
 
 @each $col, $rojo in $colores {
@@ -375,6 +366,7 @@ $colores: (
                 color: $color4;
                 min-height: 3em;
                 margin-bottom: 2em;
+                padding:0.5em 1em;
             }
             #enviar{
                 margin: 0 auto 3em;
@@ -416,9 +408,17 @@ footer{
         @include fonts(700, 1rem);
         margin-bottom: 2em;
     }
-    img{
-        width: 2em;
-        cursor: pointer;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            list-style: none;
+            img{
+                width: 2em;
+                margin: 0 .5em;
+            }
+        }
     }
 }
 
